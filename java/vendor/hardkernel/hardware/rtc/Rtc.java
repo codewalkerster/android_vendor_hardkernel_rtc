@@ -26,8 +26,8 @@ public final class Rtc {
         }
     }
 
-    public String getTime() {
-        String time = "";
+    public long getTime() {
+        long time = 0;
         try {
             time = mRtcManager.getTime();
         } catch (RemoteException e) {

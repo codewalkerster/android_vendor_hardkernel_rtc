@@ -28,7 +28,7 @@ public class RtcManager extends IRtcManager.Stub {
     public static final String Descriptor = "rtc";
 
     @Override
-    public String getTime() {
+    public long getTime() {
         return native_getTime();
     }
 
@@ -37,6 +37,6 @@ public class RtcManager extends IRtcManager.Stub {
         native_setRtcWakeup(secs);
     }
 
-    private native String native_getTime();
+    private native long native_getTime();
     private native void native_setRtcWakeup(long secs);
 }

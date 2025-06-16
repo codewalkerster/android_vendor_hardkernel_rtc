@@ -19,6 +19,6 @@
 package vendor.hardkernel.hardware.rtc;
 
 interface IRtcManager {
-    String getTime();
+    long getTime();
     void setRtcWakeup(long secs);
 }
